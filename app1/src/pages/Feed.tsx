@@ -20,11 +20,11 @@ const Feed: React.FC = () => {
         </IonHeader>
         <IonCard>
           <IonCardHeader>
-            <IonCardTitle>Card Title</IonCardTitle>
-            <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+            <IonCardTitle>Procura-se Fretista para Transportar Mesa de Picos a Oeiras</IonCardTitle>
+            <IonCardSubtitle>Serviço de Fretamento Local Necessário</IonCardSubtitle>
           </IonCardHeader>
 
-          <IonCardContent>Here's a small text description for the card content. Nothing more, nothing less.</IonCardContent>
+          <IonCardContent>Procura-se fretista confiável e experiente para transportar uma mesa de Picos para Oeiras. A mesa é de tamanho médio e será embalada de forma segura para o transporte. Pagamento justo será oferecido. Preferência por fretistas locais com disponibilidade imediata. Entre em contato para mais detalhes e para discutir os arranjos de transporte. Obrigado!😊🌳🌞</IonCardContent>
           <a href="https://api.whatsapp.com/send?phone=5589999940315">
           <IonButton fill="clear">
             <IonIcon slot="icon-only" icon={logoWhatsapp} color="success"></IonIcon>
