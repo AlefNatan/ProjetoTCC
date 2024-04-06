@@ -1,26 +1,27 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonTextarea,} from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonTextarea, IonButton, IonIcon} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab2.css';
+import {checkbox, checkboxOutline, checkboxSharp, checkmark, logoWhatsapp, trash } from 'ionicons/icons';
+import './Publication.css';
 
-const Tab2: React.FC = () => {
+const Publication: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+          <IonTitle>Publicação</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
+            <IonTitle size="large">Publicação</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonCard>
           <IonCardHeader>
           <IonCardTitle>
           <IonTextarea
-            placeholder="Escreva seu título"
+            placeholder="Escreva o título"
             counter={true}
             maxlength={50}
             autoGrow={true}
@@ -29,7 +30,6 @@ const Tab2: React.FC = () => {
             textarea.style.height = 'auto';
           }}
           ></IonTextarea>
-
           </IonCardTitle>
           <IonCardSubtitle>
           <IonTextarea 
@@ -58,9 +58,19 @@ const Tab2: React.FC = () => {
             ></IonTextarea>
           </IonCardContent>
         </IonCard>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <IonButton color="danger">
+          Apagar
+            <IonIcon slot="end" icon={trash}></IonIcon>
+          </IonButton>
+          <IonButton>
+          Publicar
+            <IonIcon slot="end" icon={checkmark}></IonIcon>
+          </IonButton>
+        </div>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab2;
+export default Publication;

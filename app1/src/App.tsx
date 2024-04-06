@@ -12,8 +12,8 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { person,duplicateSharp, newspaperOutline} from 'ionicons/icons';
 import Feed from './pages/Feed';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import Publication from './pages/Publication';
+import Profile from './pages/Profile';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -44,11 +44,11 @@ const App: React.FC = () => (
           <Route exact path="/feed">
             <Feed />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route exact path="/publication">
+            <Publication />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/profile">
+            <Profile />
           </Route>
           <Route exact path="/">
             <Redirect to="/feed" />
@@ -59,13 +59,13 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={newspaperOutline} />
             <IonLabel>Feed</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="publication" href="/publication">
             <IonIcon aria-hidden="true" icon={duplicateSharp} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonLabel>Publicação</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="profile" href="/profile">
             <IonIcon aria-hidden="true" icon={person} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonLabel>Perfil</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
