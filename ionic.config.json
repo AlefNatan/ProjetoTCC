@@ -1,0 +1,7 @@
+{
+  "name": "ProjetoTCC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
